@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <h1>1 v 1 Score Keeper</h1>
+    <h2><span class="player1Display">0</span> to <span class="player2Display">0</span></h2>
+    <div>
+        <p>Click a button to track or reset the score</p>
+        <div></div><select name="winCon" id="winCon">
+            <option value="chooseWinCon" onchange="getOption()">--Please choose a win condition--</option>
+            <option id="to2" value="2">Best of 3</option>
+            <option id="to3" value="3">Best of 5</option>
+            <option id="to4" value="4">Best of 7</option>
+            <option id="to5" value="5">First to 5</option>
+            <option id="to7" value="7">First to 7</option>
+            <option id="to10" value="10">First to 10</option>
+            <!-- <option value="untracked">Endless</option> -->
+        </select>
+    </div>
+    <br>
+    <button id="player1">+1 for Player One</button>
+    <button id="player2">+1 for Player Two</button>
+    <button id="reset">Reset Score</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
